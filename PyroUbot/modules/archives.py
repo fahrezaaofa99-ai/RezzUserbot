@@ -2,14 +2,13 @@ from PyroUbot.core.helpers.tools import get_data_id
 from PyroUbot import *
 __MODULE__ = "ᴀʀᴄʜɪᴠᴇ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀʀᴄʜɪᴠᴇ ⦫<b>
+<blockquote><b>Bantuan Untuk Archive
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}arch</code>
-⊷ mengarchivekan group chat pribadi maupun channel
+perintah : <code>{0}arch</code>
+    mengarchivekan group chat pribadi maupun channel
 
-ᚗ <code>{0}unarch</code>
-⊷ mengunarchivekan group chat pribadi maupun channel</b></blockquote>
+perintah : <code>{0}unarch</code>
+    mengunarchivekan group chat pribadi maupun channel</b></blockquote>
 """
 @PY.UBOT("arch")
 @PY.TOP_CMD

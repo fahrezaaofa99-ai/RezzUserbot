@@ -5,17 +5,16 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "ʙᴀʀᴅ ᴀɪ"
+__MODULE__ = "ᴇɴᴄ ʙᴀsᴇ64"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴀʀᴅ ᴀɪ ⦫</b>
-
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}bard</code>
-⊷ dapat menulis cerita, puisi, skrip, kode komputer, musik, email, surat, dll</b></blockquote>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴇɴᴄ ʙᴀsᴇ64 ⦫</b>
+<blockquote>⎆ perintah :
+ᚗ <code>{0}enc64</code> code
+⊶ untuk encode base64.
+</blockquote>
 """
 
-
-@PY.UBOT("bard")
+@PY.UBOT("enc64")
 @PY.TOP_CMD
 async def chat_gpt(client, message):
     try:
@@ -23,18 +22,18 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .bard query"
+                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .enc64 [code]"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>proccesing....")
+            prs = await message.reply_text(f"<emoji id=6298414727487818323>😉</emoji>proccesing encode base64....")
             a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.botcahx.eu.org/api/search/bard-ai?text={a}&apikey=moire')
+            response = requests.get(f'https://vapis.my.id/api/tobase64?q={a}')
 
             try:
-                if "message" in response.json():
-                    x = response.json()["message"]                  
+                if "result" in response.json():
+                    x = response.json()["result"]                  
                     await prs.edit(
-                      f"<blockquote>{x}</blockquote>"
+                      f"<blockquote>`{x}`</blockquote>"
                     )
                 else:
                     await message.reply_text("No 'results' key found in the response.")

@@ -5,10 +5,11 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀʟᴋɪᴛᴀʙ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Alkitab
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀʟᴋɪᴛᴀʙ ⦫<b>
 
-perintah : <code>{0}alkitab</code> kejadian
-    Untuk Search Ayat Alkitab.</b></blockquote>
+<blockquote><b>⎆ perintah :
+ᚗ <code>{0}alkitab</code>
+  kejadian Untuk Search Ayat Alkitab.</b></blockquote>
 """
 
 @PY.UBOT("alkitab")

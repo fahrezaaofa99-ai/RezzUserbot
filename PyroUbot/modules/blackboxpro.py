@@ -5,16 +5,16 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "ʙɪɴɢ ᴄʜᴀᴛ"
+__MODULE__ = "blackboxpro"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Bing Chat
+<blockquote><b>Bantuan Untuk blackboxpro
 
-perintah : <code>{0}bing</code>
-    dapat mencari informasi terbaru dari web, Membantu dengan tugas produktivitas, Membantu dengan tugas produktivitas Seperti membuat daftar ,mengatur jadwal bisa merekomendasikan: wisata,buku,film dll</b></blockquote>
+perintah : <code>{0}blackboxpro</code>
+    dapat membantu Anda dengan berbagai konsep pemprograman dan lebih lengkap dari blackbox biasa</b></blockquote>
 """
 
 
-@PY.UBOT("bing")
+@PY.UBOT("blackboxpro")
 @PY.TOP_CMD
 async def chat_gpt(client, message):
     try:
@@ -22,16 +22,16 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .bard query"
+                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .blackboxpro buatkan html untuk menyatakan cinta"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5469745532693923461>♾</emoji>Proccesing Kingz....")
+            prs = await message.reply_text(f"<emoji id=5202216593966244027>👨‍💻</emoji>proses coding....")
             a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.botcahx.eu.org/api/search/bing-chat?text={a}&apikey=Boyy')
+            response = requests.get(f'https://api.siputzx.my.id/api/ai/blackboxai-pro?content={a}')
 
             try:
-                if "message" in response.json():
-                    x = response.json()["message"]                  
+                if "data" in response.json():
+                    x = response.json()["data"]                  
                     await prs.edit(
                       f"<blockquote>{x}</blockquote>"
                     )
