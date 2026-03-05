@@ -23,7 +23,7 @@ async def _(client, callback_query):
             f"""
 <blockquote><b>ꜱɪʟᴀʜᴋᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴛᴇʀʟᴇʙɪʜ ᴛᴀʜᴜʟᴜ ᴋᴇ ᴅᴀɴᴀ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ</b>           
 
-ᴅᴀɴᴀ : || `089517627977` ||
+ᴅᴀɴᴀ : || `087889969170` ||
 
 <b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ: {full_name}</b></blockquote>
 """,
@@ -54,7 +54,7 @@ async def _(client, callback_query):
             )
             CONFIRM_PAYMENT.remove(get.id)
             buttons = [
-                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/=Priaindiareal")]
+                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/=padukarezz")]
             ]
             return await bot.send_message(
                 user_id,

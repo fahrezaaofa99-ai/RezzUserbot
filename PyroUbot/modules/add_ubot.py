@@ -313,7 +313,7 @@ async def _(client, callback_query):
 ɴᴀᴍᴇ : <a href=tg://user?id={new_client.me.id}>{new_client.me.first_name} {new_client.me.last_name or ''}</a>
 ɪᴅ : {new_client.me.id}
 ᴘʀᴇꜰɪxᴇꜱ : {' '.join(SH)}
-ʜᴀʀᴀᴘ ᴊᴏɪɴ : @InfoKingPremUserUbot ʜᴀʀᴀᴘ ᴊᴏɪɴ ʀᴏᴏᴍ ᴅɪᴀᴛᴀs ᴅᴀɴ ᴊᴀɴɢᴀɴ ᴏᴜᴛ ᴀɢᴀʀ sᴀғᴇᴛʏ
+ʜᴀʀᴀᴘ ᴊᴏɪɴ : @AboutRezzHostingers ʜᴀʀᴀᴘ ᴊᴏɪɴ ʀᴏᴏᴍ ᴅɪᴀᴛᴀs ᴅᴀɴ ᴊᴀɴɢᴀɴ ᴏᴜᴛ ᴀɢᴀʀ sᴀғᴇᴛʏ
 ᴊɪᴋᴀ ʙᴏᴛ ᴛɪᴅᴀᴋ ʀᴇꜱᴘᴏɴ, ᴋᴇᴛɪᴋ /restart</b></blockquote>
         """
     await bot_msg.edit(text_done, disable_web_page_preview=True,
@@ -321,9 +321,9 @@ async def _(client, callback_query):
     await bash("rm -rf *session*")
     await install_my_peer(new_client)
     try:
-        await new_client.join_chat("InfoKingPremUserUbot")
-        await new_client.join_chat("roompublicpriaindia")
-        await new_client.join_chat("x1zywods")
+        await new_client.join_chat("AboutRezzHostingers")
+        await new_client.join_chat("RoomPublicRezzIsBack")
+        await new_client.join_chat("ubottmakgwe")
     except UserAlreadyParticipant:
         pass
 

@@ -18,10 +18,10 @@ from pyrogram.types import *
 
 from PyroUbot import *
 
-@PY.BOT("freekingprem")
+@PY.BOT("freerezz")
 async def _(client, message):
     buttons = BTN.ALWAYSBOYSZ(message)
-    sh = await message.reply("""<u><b>𝗙𝗜𝗧𝗨𝗥 𝗙𝗥𝗘𝗘 𝗞𝗜𝗡𝗚𝗣𝗥𝗘𝗠 𝗨𝗦𝗘𝗥𝗕𝗢𝗧!</b></u>
+    sh = await message.reply("""<u><b>𝐅𝐈𝐓𝐔𝐑 𝐅𝐑𝐄𝐄 𝐑𝐄𝐙𝐙 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐕𝐕𝐈𝐏!</b></u>
 <blockquote><b>/ai -  ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴍᴜ</b>
 <b>/brat - ᴍᴀsᴜᴋᴋᴀɴ ᴛᴇxᴛ ᴜɴᴛᴜᴋ ᴅɪ ᴊᴀᴅɪᴋᴀɴ ғᴏᴛᴏ</b>
 <b>/adzan - ᴍᴀsᴜᴋᴋᴀɴ ᴋᴏᴛᴀ ᴜɴᴛᴜᴋ ᴄᴇᴋ ᴊᴀᴅᴡᴀʟ ᴀᴅᴢᴀɴ</b>
@@ -29,4 +29,4 @@ async def _(client, message):
 <b>/tiktok - ʙᴇʀɪᴋᴀɴ ʟɪɴᴋ ᴠᴛ/ʟɪɴᴋ ғɪᴅɪᴏ ᴛɪᴋᴛᴏᴋ ᴜɴᴛᴜᴋ ᴅɪ ᴅᴏᴡɴʟᴏᴀᴅ</b></blockquote>
 
 <blockquote><b>ᴏᴡɴᴇʀ ᴜsᴇʀʙᴏᴛ ᴅɪʙᴀᴡᴀʜ sɪɴɪʜ</b>
-<b>ᴏᴡɴᴇʀ ᴜsᴇʀʙᴏᴛ: <a href=https://t.me/Priaindiareal>ᴏᴡɴᴇʀ ᴋɪɴɢᴘʀᴇᴍ</a></b></blockquote>""", reply_markup=InlineKeyboardMarkup(buttons))
+<b>ᴏᴡɴᴇʀ ᴜsᴇʀʙᴏᴛ: <a href=https://t.me/padukarezz>ᴏᴡɴᴇʀ ʀᴇᴢᴢ</a></b></blockquote>""", reply_markup=InlineKeyboardMarkup(buttons))
