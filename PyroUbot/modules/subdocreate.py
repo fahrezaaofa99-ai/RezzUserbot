@@ -4,7 +4,7 @@ from pyrogram import *
 from pyrogram import Client, filters
 from PyroUbot import PY
 
-__MODULE__ = "𝙲𝚁𝙴𝙰𝚃𝙴 𝙳𝙾𝙼𝙰𝙸𝙽"
+__MODULE__ = "Subdomain Creator"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Subdomain Creator</b>
 

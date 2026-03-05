@@ -1,6 +1,6 @@
 from PyroUbot import *
 
-__MODULE__ = "𝚂𝙰𝙽𝙶𝙼𝙰𝚃𝙰"
+__MODULE__ = "sangmata"
 __HELP__ = """
 <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴀɴɢᴍᴀᴛᴀ 』</b>
 

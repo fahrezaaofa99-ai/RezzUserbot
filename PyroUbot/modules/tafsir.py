@@ -4,7 +4,7 @@ from PyroUbot import *
 
 def get_random_tafsir(query):
     API_URL = "https://api.botcahx.eu.org/api/islamic/tafsirsurah"
-    API_KEY = "025a6ef0"
+    API_KEY = "Boyy"
 
     params = {"text": query, "apikey": API_KEY}
 

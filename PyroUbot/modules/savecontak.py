@@ -5,16 +5,15 @@ from pyrogram.raw.types import InputUser
 
 from PyroUbot import *
 
-__MODULE__ = "ᴋᴏɴᴛᴀᴋ"
+__MODULE__ = "kontak"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴋᴏɴᴛᴀᴋ ⦫</b>
+<blockquote>◖ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴀᴠᴇ ᴋᴏɴᴛᴀᴋ ◗</blockquote>
 <blockquote>
-⎆ perintah :
-ᚗ <code>{0}savekon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ ] [ɴᴀᴍᴀ ᴋᴏɴᴛᴀᴋ]
-⊶ ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ
+  ❑ ᴄᴍᴅ: <code>{0}savekon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ ] [ɴᴀᴍᴀ ᴋᴏɴᴛᴀᴋ]
+  <code>ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ</code>
 
-ᚗ <code>{0}delkon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ]
-⊶ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ʏᴀɴɢ ᴅɪꜱɪᴍᴘᴀɴ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ
+  ❑ ᴄᴍᴅ: <code>{0}delkon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ]
+  <code>ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ʏᴀɴɢ ᴅɪꜱɪᴍᴘᴀɴ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ</code>
 </blockquote>
 """
 

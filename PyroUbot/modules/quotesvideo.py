@@ -57,7 +57,7 @@ async def quotesvideo_handler(client, message: Message):
 
     await msg.edit("🎥 Membuat Quotes Video...")
     
-    api_url = f"https://api.botcahx.eu.org/api/maker/quotesvideo?url={video_url}&text={query}&apikey=045705b1"
+    api_url = f"https://api.botcahx.eu.org/api/maker/quotesvideo?url={video_url}&text={query}&apikey=moire"
     res = requests.get(api_url)
 
     if res.status_code == 200:

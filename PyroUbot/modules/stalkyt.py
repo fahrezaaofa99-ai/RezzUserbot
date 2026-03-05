@@ -25,7 +25,7 @@ async def stalkyt(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://api.betabotz.eu.org/api/stalk/yt?username={username}&apikey=Btz-bxwol"
+    url = f"https://aemt.uk.to/download/youtubestalk?text={username}"
     
     try:
         response = requests.get(url)

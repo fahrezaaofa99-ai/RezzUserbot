@@ -25,7 +25,7 @@ async def stalkig(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://api.betabotz.eu.org/api/stalk/ig?username={username}&apikey=Btz-bxwol"
+    url = f"https://api.botcahx.eu.org/api/stalk/ig?apikey=Boyy&username={username}"
     
     try:
         response = requests.get(url)
@@ -47,7 +47,7 @@ async def stalkig(client, message):
 <b><emoji id=5841243255856960314>⭐</emoji>Posts: <code>{postsCount}</code></b>
 <b><emoji id=5353036831581544549>⭐</emoji>Bio: <code>{bio}</code></b>
 
-<blockquote><b>-- USERBOT 15K/BULAN BY @ndyzoffc --</blockquote></b>
+<blockquote><b>-- USERBOT 15K/BULAN BY @KingzUserr_bot --</blockquote></b>
 """
             photo_path = wget.download(photoUrl)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)

@@ -15,7 +15,7 @@ def get_giraffe_image(text):
     url = "https://api.botcahx.eu.org/api/search/stablediffusion"
     params = {
         "text": text,
-        "apikey": f"045705b1"
+        "apikey": f"moire"
     }
     try:
         response = requests.get(url, params=params)

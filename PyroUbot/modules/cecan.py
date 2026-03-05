@@ -8,39 +8,37 @@ from io import BytesIO
 
 __MODULE__ = "ᴄᴇᴄᴀɴ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴄᴇᴄᴀɴ 』</b>
+📚 <b>--Folder Untuk Cecan--</b>
 
-<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}cecan [query]</code>
-
-<b>Query:</b> <b>Indonesia</b>,
-    <b>china</b>,
-    <b>thailand</b>,
-    <b>vietnam</b>,
-    <b>hijaber</b>,
-    <b>rose</b>,
-    <b>ryujin</b>,
-    <b>jiso</b>,
-    <b>jeni</b>,
-    <b>justinaxie</b>,
-    <b>malaysia</b>,
-    <b>japan</b>,
-    <b>korea</b></blockquote>
+<blockquote><b>🚦 Perintah : <code>{0}cecan [query]</code>
+🦠 Penjelasan : Mengirim Foto Random Sesuai Query.</b></blockquote>
+<blockquote><b>📖 Penggunaan : 
+ Query: 
+    Indonesia,
+    china,
+    thailand,
+    vietnam,
+    waifu,
+    neko,
+    shinobu,
+    hubble,
+    malaysia,
+    japan,
+    korea</b></blockquote>
 """
 
 URLS = {
-    "indonesia": "https://api.betabotz.eu.org/api/cecan/indonesia?apikey=Btz-bxwol",
-    "china": "https://api.betabotz.eu.org/api/cecan/china?apikey=Btz-bxwol",
-    "thailand": "https://api.betabotz.eu.org/api/cecan/thailand?apikey=Btz-bxwol",
-    "vietnam": "https://api.betabotz.eu.org/api/cecan/vietnam?apikey=Btz-bxwol",
-    "hijaber": "https://api.betabotz.eu.org/api/cecan/hijaber?apikey=Btz-bxwol",
-    "rose": "https://api.betabotz.eu.org/api/cecan/rose?apikey=Btz-bxwol",
-    "ryujin": "https://api.betabotz.eu.org/api/cecan/ryujin?apikey=Btz-bxwol",
-    "jiso": "https://api.betabotz.eu.org/api/cecan/jiso?apikey=Btz-bxwol",
-    "jeni": "https://api.betabotz.eu.org/api/cecan/jeni?apikey=Btz-bxwol",
-    "justinaxie": "https://api.betabotz.eu.org/api/cecan/justinaxie?apikey=Btz-bxwol",
-    "malaysia": "https://api.betabotz.eu.org/api/cecan/malaysia?apikey=Btz-bxwol",
-    "japan": "https://api.betabotz.eu.org/api/cecan/japan?apikey=Btz-bxwol",
-    "korea": "https://api.betabotz.eu.org/api/cecan/korea?apikey=Btz-bxwol"
+    "indonesia": "https://widipe.com/indonesia",
+    "china": "https://widipe.com/china",
+    "thailand": "https://widipe.com/thailand",
+    "vietnam": "https://widipe.com/vietnam",
+    "waifu": "https://widipe.com/waifu",
+    "neko": "https://widipe.com/neko",
+    "shinobu": "https://widipe.com/shinobu",
+    "hubble": "https://widipe.com/hubbleimg",
+    "malaysia": "https://widipe.com/malaysia",
+    "japan": "https://widipe.com/japan",
+    "korea": "https://widipe.com/korea"
 }
 
 @PY.UBOT("cecan")
@@ -54,7 +52,7 @@ async def _(client, message):
         await message.reply(f"Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
         return
 
-    processing_msg = await message.reply("Processing Kingz...")
+    processing_msg = await message.reply("Processing...")
     
     try:
         await client.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)

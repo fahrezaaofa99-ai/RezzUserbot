@@ -20,7 +20,7 @@ async def spotify_search(client, message):
         return
     
     proses_msg = await message.reply_text("🔎 Mencari lagu...")
-    search_url = f"https://api.botcahx.eu.org/api/search/spotify?query={query}&apikey=045705b1"
+    search_url = f"https://api.botcahx.eu.org/api/search/spotify?query={query}&apikey=moire"
     search_response = requests.get(search_url).json()
     
     if not search_response["status"] or not search_response["result"]["status"]:
@@ -36,7 +36,7 @@ async def spotify_search(client, message):
     
     await proses_msg.edit_text("👅 Mengunduh lagu...")
     
-    download_url = f"https://api.botcahx.eu.org/api/download/spotify?url={track_url}&apikey=045705b1"
+    download_url = f"https://api.botcahx.eu.org/api/download/spotify?url={track_url}&apikey=moire"
     download_response = requests.get(download_url).json()
     
     if not download_response["status"]:

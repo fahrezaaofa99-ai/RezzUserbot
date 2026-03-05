@@ -25,7 +25,7 @@ async def stalktt(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://api.betabotz.eu.org/api/stalk/tt?username={username}&apikey=Btz-bxwol"
+    url = f"https://aemt.uk.to/download/tiktokstalk?username={username}"
     
     try:
         response = requests.get(url)

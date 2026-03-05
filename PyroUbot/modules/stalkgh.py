@@ -25,7 +25,7 @@ async def stalkgh(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://api.betabotz.eu.org/api/stalk/github?username={username}&apikey=Btz-bxwol"
+    url = f"https://aemt.uk.to/ghstalk?username={username}"
     
     try:
         response = requests.get(url)

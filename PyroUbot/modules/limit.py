@@ -1,7 +1,8 @@
-__MODULE__ = "ʟɪᴍɪᴛ"
-__HELP__ = """
-<blockquote><b>♛ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟɪᴍɪᴛ ♛<b>
+from PyroUbot import *
 
-<blockquote><b>perintah : 
-<code>{0}limit</code> mengecek status akun apakah terkena limit atau tidak</b></blockquote>
+__MODULE__ = "limit"
+__HELP__ = """
+perintah : <code>{0}limit</code>
+    mengecek status akun apakah terkena limit atau tidak
 """
+

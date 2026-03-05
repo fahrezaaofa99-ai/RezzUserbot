@@ -1,4 +1,4 @@
-__MODULE__ = "𝙲𝙾𝙻𝙾𝙽𝙶"
+__MODULE__ = "colong"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Colong
 

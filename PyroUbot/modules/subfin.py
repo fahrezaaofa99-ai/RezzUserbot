@@ -50,5 +50,5 @@ async def subfinder(client, message):
     else:
         await message.reply("gagal mencari subdomain.")
 
-API_KEY = "025a6ef0" 
+API_KEY = "jembot" 
 API_URL = "https://api.botcahx.eu.org/api/tools/subdomain-finder"

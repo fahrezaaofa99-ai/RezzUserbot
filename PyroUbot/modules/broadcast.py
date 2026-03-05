@@ -1,4 +1,3 @@
-#rename by alwaysboysz(jangan di hapus anjeng)
 import asyncio
 import random
 
@@ -102,14 +101,11 @@ async def gcast_handler(client, message):
     global gcast_progress
     gcast_progress.append(client.me.id)
     
-    robot = await EMO.ROBOT(client)
-    terompet = await EMO.TEROMPET(client)
-    centang = await EMO.CENTANG(client)
-    pesan = await EMO.PESAN(client)
-    jam = await EMO.JAM(client)
-    silang = await EMO.SILANG(client)
     prs = await EMO.PROSES(client)
+    sks = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
+    bcs = await EMO.BROADCAST(client)
+    ktrng = await EMO.BL_KETERANGAN(client)    
     _msg = f"<b>{prs}ᴍᴇᴍᴘʀᴏsᴇs...</b>"
     gcs = await message.reply(_msg)    
     command, text = extract_type_and_msg(message)
@@ -151,13 +147,10 @@ async def gcast_handler(client, message):
     gcast_progress.remove(client.me.id)
     await gcs.delete()
     _gcs = f"""
-<blockquote>{robot} <b>Youre Broadcast Result</b>{terompet}
-  {centang} <b>Success: {done}</b>
-  {silang} <b>Failed: {failed}</b>
-  {robot} <b>Task ID: {message.id}</b>
-  {pesan} <b>Type: {command}</b>
-  {jam} <b>Blacklist: {len(blacklist)}</b>
-<b>My Bot: @{client.me.username}</b></blockquote>
+<blockquote><b>{bcs}ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴇʀᴋɪʀɪᴍ</b></blockquote>
+<blockquote><b>{sks}ʙᴇʀʜᴀsɪʟ : {done} ᴄʜᴀᴛ</b>
+<b>{ggl}ɢᴀɢᴀʟ : {failed} ᴄʜᴀᴛ</b>
+<b>{ktrng}ᴛʏᴘᴇ :</b> <code>{command}</code></blockquote>
 
 """
     return await message.reply(_gcs)
@@ -177,14 +170,10 @@ async def stopg_handler(client, message):
 @PY.UBOT("bcfd|cfd")
 @PY.TOP_CMD
 async def _(client, message):
-    robot = await EMO.ROBOT(client)
-    terompet = await EMO.TEROMPET(client)
-    centang = await EMO.CENTANG(client)
-    pesan = await EMO.PESAN(client)
-    jam = await EMO.JAM(client)
-    silang = await EMO.SILANG(client)
     prs = await EMO.PROSES(client)
+    brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
+    bcs = await EMO.BROADCAST(client)
     
     _msg = f"{prs}proceꜱꜱing..."
     gcs = await message.reply(_msg)
@@ -225,13 +214,9 @@ async def _(client, message):
 
     await gcs.delete()
     _gcs = f"""
-<blockquote>{robot} <b>Youre Broadcast Result</b>{terompet}
-  {centang} <b>Success: {done}</b>
-  {silang} <b>Failed: {failed}</b>
-  {robot} <b>Task ID: {message.id}</b>
-  {pesan} <b>Type: {command}</b>
-  {jam} <b>Blacklist: {len(blacklist)}</b>
-<b>My Bot: @{client.me.username}</b></blockquote>
+<blockquote><b>{bcs}ʙʀᴏᴀᴅᴄᴀsᴛ ғᴏʀᴡᴀʀᴅ ᴅᴏɴᴇ</blockquote></b>
+<blockquote><b>{brhsl} sᴜᴄᴄᴇs {done} ɢʀᴏᴜᴘ</b>
+<b>{ggl} ғᴀɪʟᴇᴅ {failed} ɢʀᴏᴜᴘ</blockquote></b>
 
 """
     return await message.reply(_gcs)
@@ -265,11 +250,12 @@ async def _(client, message):
         except Exception:
             pass
 
-    return await msg.edit(f"<blockquote><b>Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>`USERBOT 10K/BULAN BY` @Priaindiareal</b></blockquote>")
+    return await msg.edit(f"<blockquote><b>Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>`USERBOT 5K/BULAN BY` @Keladevbot</b></blockquote>")
 
 
 @PY.UBOT("addbl")
 @PY.TOP_CMD
+@PY.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -285,11 +271,15 @@ async def _(client, message):
             txt = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
 <blockquote><b>{ktrn} ᴋᴇᴛ: sᴜᴅᴀʜ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+
+<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
 """
         else:
             await add_to_vars(client.me.id, "BL_ID", chat_id)
             txt = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+
+<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
 """
 
         return await msg.edit(txt)
@@ -299,6 +289,7 @@ async def _(client, message):
 
 @PY.UBOT("unbl")
 @PY.TOP_CMD
+@PY.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -314,12 +305,16 @@ async def _(client, message):
             response = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
 <blockquote><b>{ktrn} ᴋᴇᴛ: ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</b></blockquote>
+
+<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
 """
         else:
             await remove_from_vars(client.me.id, "BL_ID", chat_id)
             response = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote ></b>
 <blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ʜᴀᴘᴜs ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+
+<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
 """
 
         return await msg.edit(response)
@@ -595,3 +590,4 @@ async def broadcast_bot(client, message):
         except Exception:
             pass
     return await msg.edit(f"✅ ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ {done} ᴜʙᴏᴛ")
+    

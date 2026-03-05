@@ -2,7 +2,7 @@ import asyncio
 from time import sleep
 from PyroUbot import *
 
-__MODULE__ = "𝚂𝙰𝙻𝙰𝙼"
+__MODULE__ = "salam"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk salam</b>
 

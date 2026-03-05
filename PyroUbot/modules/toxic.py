@@ -2,7 +2,7 @@ import asyncio
 from time import sleep
 from PyroUbot import *
 
-__MODULE__ = "𝚃𝙾𝚇𝙸𝙲"
+__MODULE__ = "toxic"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk toxic</b>
 

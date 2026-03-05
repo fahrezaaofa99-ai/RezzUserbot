@@ -1,31 +1,36 @@
+import asyncio
 import random
-from pyrogram import *
-from pyrogram import Client, filters
-from PyroUbot import PY
 
-__MODULE__ = "ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ"
-__HELP__ = """
-<blockquote><b>Bantuan Untuk Cek Khodam</b>
+from PyroUbot import *
 
-Perintah:
-<code>{0}cekkhodam [nama]</code> → Melihat jenis khodam berdasarkan nama  
+__MODULE__ = "ᴄᴇᴋᴋʜᴏᴅᴀᴍ"
+__HELP__ = """**「 BANTUAN UNTUK MODULE CEK KHODAM 」**
 
-Sumber: Random generator berdasarkan nama.</blockquote></b>
-"""
+𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .cekkhodam**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴋʜᴏᴅᴀᴍ ɴᴀᴍᴀ ᴏʀᴀɴɢ**"""
 
-KHODAM_LIST = [
-    "🐉 Naga Emas", "🔥 Macan Putih", "🌊 Siluman Air", "🦅 Garuda Sakti",
-    "⚡ Harimau Petir", "🌓 Jin Penjaga", "🌿 Roh Alam", "🪨 Batu Bertuah", "🖕 Kontol Pukinak", "👽 Alien Ngocok", " Sandal Jepit", " Jin coklat batangan", " Batu Bata", "kancing baju", " es krim", " ketoprak ", " soto madura", "Remot Tv", "Knalpot Racing", "Bihun", "Kuyang", "Nyi Blorong", "satpam komplek", "tusuk sate", "Tutup Odol", "Bebek sumbing", "Sapi Sumbing", "ultraman pink", "sabun bolong", "tai ayam", "Burung Puyuh", "Roti aoka"
-]
 
 @PY.UBOT("cekkhodam")
 @PY.TOP_CMD
-async def cek_khodam(client, message):
-    args = message.text.split(maxsplit=1)
-    if len(args) < 2:
-        return await message.reply_text("⚠️ Gunakan format: cekkhodam [nama]")
+async def cekkhodam(client, message):
+    try:
+        nama = message.text.split(" ", 1)[1] if len(message.text.split()) > 1 else None
+        if not nama:
+            await message.edit("ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴀɴᴊᴇɴɢ🤓")
+            return
 
-    nama = args[1]
-    khodam = random.choice(KHODAM_LIST)
-    hasil = f"<blockquote><b>🔮 **Hasil Cek Khodam** 🔮\n\n🧑 Nama: `{nama}`\n🪄 Khodam: `{khodam}`</blockquote></b>"
-    await message.reply_text(hasil)
+        def pick_random(options):
+            return random.choice(options)
+
+        hasil = f"""
+ <b>𖤐 ʜᴀsɪʟ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ:</b>
+╭───────────────────────
+├ •ɴᴀᴍᴀ : {nama}
+├ •ᴋʜᴏᴅᴀᴍɴʏᴀ : {pick_random(['lonte gurun', 'dugong', 'macan yatim', 'buaya darat', 'kanjut terbang', 'kuda kayang', 'janda salto', 'lonte alas', 'jembut singa', 'gajah terbang', 'kuda cacat', 'jembut pink', 'sabun bolong'])}
+├ •ɴɢᴇʀɪ ʙᴇᴛ ᴊɪʀ ᴋʜᴏᴅᴀᴍɴʏᴀ
+╰────────────────────────
+  **ɴᴇxᴛ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍɴʏᴀ sɪᴀᴘᴀ ʟᴀɢɪ.**       
+      """
+        await message.edit(hasil)
+    except BaseException:
+        pass
