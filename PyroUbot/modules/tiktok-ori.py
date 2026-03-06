@@ -24,7 +24,7 @@ async def download_file(url, path):
                 print(f"Failed to download file: {response.status}")
 
 async def downloader_tiktok(client, message, perintah, tujuan):
-    url = f"https://api.botcahx.eu.org/api/dowloader/tiktok?url={tujuan}&apikey=Boysz"
+    url = f"https://api.botcahx.eu.org/api/dowloader/tiktok?url={tujuan}&apikey=025a6ef0"
     headers = {"accept": "application/json"}
 
     async with aiohttp.ClientSession() as session:

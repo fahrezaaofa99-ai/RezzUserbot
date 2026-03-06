@@ -3,7 +3,7 @@ import requests
 from PyroUbot import *
 
 # Masukkan API Key Anda di sini
-API_KEY = "Fieyzzz"  # Ganti dengan API key yang benar
+API_KEY = "025a6ef0"  # Ganti dengan API key yang benar
 
 __MODULE__ = "ʏᴛsᴇᴀʀᴄʜ"
 __HELP__ = """

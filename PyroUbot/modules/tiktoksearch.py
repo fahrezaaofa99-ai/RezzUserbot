@@ -10,7 +10,7 @@ __HELP__ = """
    <i>penjelasan:</b> untuk mencari vt yang di perintahkan.</i></blockquote>
 """
 
-API_KEY = "Boyy"
+API_KEY = "045705b1"
 
 @PY.UBOT("tiktoksearch|tts|ttsearch")
 async def tiktok_search(client, message):
