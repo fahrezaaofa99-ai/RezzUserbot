@@ -1,15 +1,15 @@
 import os
 import datetime
 import requests
-from PyroUbot import *
+from fansx import *
 
-__MODULE__ = "ss ᴡᴇʙ"
+__MODULE__ = "ss ᴡᴇʙ ᴘᴄ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ pc ✮</b>
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}sswwb</code> link
-⊷ Screenshot Website</b></blockquote>
+<blockquote><b>perintah :
+<code>{0}ssweb</code> link
+untuk screenshot website pc</b></blockquote>
 """
 
 def get_ssweb_image(url):
@@ -17,7 +17,7 @@ def get_ssweb_image(url):
     params = {
         "url": url,
         "device": "desktop",
-        "apikey": "moire"
+        "apikey": "045705b1"
     }
     try:
         response = requests.get(api_url, params=params)
@@ -34,14 +34,14 @@ def get_ssweb_image(url):
 async def screenshot_handler(client, message):
     args = message.text.split(maxsplit=1)
     if len(args) < 2:
-        await message.reply_text("<b><i>Input URL!</i></b>")
+        await message.reply_text("<b><i>MANA URL NYA!</i></b>")
         return
 
     url = args[1].strip()
     if not url.startswith(("http://", "https://")):
         url = "https://" + url
 
-    await message.reply_text("<b><i>Ｌｏａｄｉｎｇ．．.</i></b>")
+    await message.reply_text("<b><i>PROSES SS PAKAI PC KINGZ ♛</i></b>")
 
     image_data = get_ssweb_image(url)
     if not image_data:
@@ -52,6 +52,6 @@ async def screenshot_handler(client, message):
     with open(filepath, "wb") as file:
         file.write(image_data)
 
-    await client.send_photo(message.chat.id, filepath, caption="**__Nih Gambarnya Dah Gw Eses.__**")
+    await client.send_photo(message.chat.id, filepath, caption="**__Nih Kingz Gambarnya Sudah Di Screenshot Pakai Pc.__**")
     os.remove(filepath)
     

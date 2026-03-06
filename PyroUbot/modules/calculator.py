@@ -1,6 +1,6 @@
 import ast
 from pyrogram import Client, filters
-from PyroUbot import PY
+from fansx import PY
 
 __MODULE__ = "ᴄᴀʟᴄᴜʟᴀᴛᴏʀ"
 __HELP__ = """

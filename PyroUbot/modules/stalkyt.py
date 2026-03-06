@@ -2,7 +2,7 @@ import requests
 import wget
 import os
 from pyrogram import Client
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "sᴛᴀʟᴋʏᴛ"
 __HELP__ = """
@@ -25,7 +25,7 @@ async def stalkyt(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://aemt.uk.to/download/youtubestalk?text={username}"
+    url = f"https://api.betabotz.eu.org/api/stalk/yt?username={username}&apikey=Btz-bxwol"
     
     try:
         response = requests.get(url)

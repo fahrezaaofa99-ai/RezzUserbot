@@ -1,5 +1,5 @@
 import aiohttp
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ɢᴏᴏɢʟᴇ"
 __HELP__ = """

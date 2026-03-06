@@ -1,4 +1,4 @@
-from PyroUbot import *
+from fansx import *
 from pyrogram.raw.functions.contacts import GetBlocked
 
 __MODULE__ = "ʙʟᴏᴄᴋᴇᴅ"

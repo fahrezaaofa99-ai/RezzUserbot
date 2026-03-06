@@ -5,7 +5,7 @@ import requests
 from pyrogram import filters
 
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴄᴇᴋ ɪᴘ ᴀᴅʀᴇss"
 __HELP__ = """

@@ -1,3 +1,4 @@
+#rename by alwaysboysz(jangan di hapus anjeng)
 import asyncio
 import random
 
@@ -7,28 +8,25 @@ from pyrogram.raw.functions.messages import DeleteHistory, StartBot
 from pyrogram.errors.exceptions import *
 from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴄᴀꜱᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Broadcast
+<blockquote><b>「Bantuan Broadcast」
 
-perintah : <code>{0}gikes</code>
+⪩ Perintah : <code>{0}gikes</code>
+    ↝ type : all , users , group
 
-type : all , users , group
+⪩ Perintah : <code>{0}stopg</code>
+    ↝ menghentikan proses gikes
 
-all untuk semua , users untuk user, group untuk group
+⪩ Perintah : <code>{0}bcfd</code> or <code>{0}cfd</code>
+    ↝ mengirim pesan siaran secara forward
 
-perintah : <code>{0}stopg</code>
-    untuk menghentikan proses gikes yang sedang berlangsung
-
-perintah : <code>{0}bcfd</code> or <code>{0}cfd</code>
-    mengirim pesan siaran secara forward
-
-perintah : <code>{0}send</code>
+⪩ Perintah : <code>{0}send</code>
     mengirim pesan ke user/group/channel
 
-perintah : <code>{0}autobc</code>
+⪩ Perintah : <code>{0}autobc</code>
     mengirim pesan siaran secara otomatis
 
 query:
@@ -63,30 +61,30 @@ async def limit_cmd(client, message):
         if pjg <= 100:
             if client.me.is_premium:
                 text = f"""
-<blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
-{yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>{pong} Status akun : True
+{tion} Limit : Akun anda tidak dibatasi
+{yubot} Userbot : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
-<blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
-ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote> Status akun : Buy prem dulu ya
+Limit : Akun anda tidak dibatasi
+Userbot : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
         else:
             if client.me.is_premium:
                 text = f"""
-<blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
-{yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>{pong} Status akun : True
+{tion} Limit : Akun anda bermasalah
+{yubot} Userbot : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
-<blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
-ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote> Status akun : Buy prem dulu ya
+Limit : Akun anda bermasalah
+Userbot : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
@@ -101,11 +99,14 @@ async def gcast_handler(client, message):
     global gcast_progress
     gcast_progress.append(client.me.id)
     
+    robot = await EMO.ROBOT(client)
+    terompet = await EMO.TEROMPET(client)
+    centang = await EMO.CENTANG(client)
+    pesan = await EMO.PESAN(client)
+    jam = await EMO.JAM(client)
+    silang = await EMO.SILANG(client)
     prs = await EMO.PROSES(client)
-    sks = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    bcs = await EMO.BROADCAST(client)
-    ktrng = await EMO.BL_KETERANGAN(client)    
     _msg = f"<b>{prs}ᴍᴇᴍᴘʀᴏsᴇs...</b>"
     gcs = await message.reply(_msg)    
     command, text = extract_type_and_msg(message)
@@ -147,10 +148,13 @@ async def gcast_handler(client, message):
     gcast_progress.remove(client.me.id)
     await gcs.delete()
     _gcs = f"""
-<blockquote><b>{bcs}ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴇʀᴋɪʀɪᴍ</b></blockquote>
-<blockquote><b>{sks}ʙᴇʀʜᴀsɪʟ : {done} ᴄʜᴀᴛ</b>
-<b>{ggl}ɢᴀɢᴀʟ : {failed} ᴄʜᴀᴛ</b>
-<b>{ktrng}ᴛʏᴘᴇ :</b> <code>{command}</code></blockquote>
+<blockquote>{robot} <b>Youre Broadcast Result</b>{terompet}
+⊱ {centang} <b>Success: {done}</b>
+⊱ {silang} <b>Failed: {failed}</b>
+⊱ {robot} <b>Task ID: {message.id}</b>
+⊱ {pesan} <b>Type: {command}</b>
+⊱ {jam} <b>Blacklist: {len(blacklist)}</b>
+⊱ <b>My userbot : @{client.me.username}</b></blockquote>
 
 """
     return await message.reply(_gcs)
@@ -170,17 +174,21 @@ async def stopg_handler(client, message):
 @PY.UBOT("bcfd|cfd")
 @PY.TOP_CMD
 async def _(client, message):
+    robot = await EMO.ROBOT(client)
+    terompet = await EMO.TEROMPET(client)
+    centang = await EMO.CENTANG(client)
+    pesan = await EMO.PESAN(client)
+    jam = await EMO.JAM(client)
+    silang = await EMO.SILANG(client)
     prs = await EMO.PROSES(client)
-    brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    bcs = await EMO.BROADCAST(client)
     
     _msg = f"{prs}proceꜱꜱing..."
     gcs = await message.reply(_msg)
 
     command, text = extract_type_and_msg(message)
     
-    if command not in ["group", "users", "all"] or not text:
+    if command not in ["group", "users", "all", "channel"] or not text:
         return await gcs.edit(f"{ggl}{message.text.split()[0]} type [reply]")
 
     if not message.reply_to_message:
@@ -214,9 +222,13 @@ async def _(client, message):
 
     await gcs.delete()
     _gcs = f"""
-<blockquote><b>{bcs}ʙʀᴏᴀᴅᴄᴀsᴛ ғᴏʀᴡᴀʀᴅ ᴅᴏɴᴇ</blockquote></b>
-<blockquote><b>{brhsl} sᴜᴄᴄᴇs {done} ɢʀᴏᴜᴘ</b>
-<b>{ggl} ғᴀɪʟᴇᴅ {failed} ɢʀᴏᴜᴘ</blockquote></b>
+<blockquote>{robot} <b>Youre Broadcast Result</b>{terompet}
+⊱ {centang} <b>Success: {done}</b>
+⊱ {silang} <b>Failed: {failed}</b>
+⊱ {robot} <b>Task ID: {message.id}</b>
+⊱ {pesan} <b>Type: {command}</b>
+⊱ {jam} <b>Blacklist: {len(blacklist)}</b>
+⊱ <b>My userbot : @{client.me.username}</b></blockquote>
 
 """
     return await message.reply(_gcs)
@@ -250,12 +262,11 @@ async def _(client, message):
         except Exception:
             pass
 
-    return await msg.edit(f"<blockquote><b>Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>`USERBOT 5K/BULAN BY` @Keladevbot</b></blockquote>")
+    return await msg.edit(f"<blockquote><b>Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>Userbot 5k/bulan by @padukarezz</b></blockquote>")
 
 
 @PY.UBOT("addbl")
 @PY.TOP_CMD
-@PY.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -269,17 +280,13 @@ async def _(client, message):
 
         if chat_id in blacklist:
             txt = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
-<blockquote><b>{ktrn} ᴋᴇᴛ: sᴜᴅᴀʜ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
-
-<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
+<blockquote><b>{grp} Group : {message.chat.title}</blockquote></b>
+<blockquote><b>{ktrn} Ket : sudah di dalam list blacklist</blockquote></b>
 """
         else:
             await add_to_vars(client.me.id, "BL_ID", chat_id)
             txt = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
-
-<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
+<blockquote><b>{grp} Group : {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} Ket : Succes ditambahkan di list blacklist</blockquote></b>
 """
 
         return await msg.edit(txt)
@@ -289,7 +296,6 @@ async def _(client, message):
 
 @PY.UBOT("unbl")
 @PY.TOP_CMD
-@PY.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -303,18 +309,14 @@ async def _(client, message):
 
         if chat_id not in blacklist:
             response = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
-<blockquote><b>{ktrn} ᴋᴇᴛ: ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</b></blockquote>
-
-<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
+<blockquote><b>{grp} Group : {message.chat.title}</blockquote></b>
+<blockquote><b>{ktrn} Ket : tidak ada di dalam list blacklist</b></blockquote>
 """
         else:
             await remove_from_vars(client.me.id, "BL_ID", chat_id)
             response = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote ></b>
-<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ʜᴀᴘᴜs ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
-
-<blockquote><b>©𝗝𝘂𝗻𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 🜲</b></blockquote>
+<blockquote><b>{grp} Group : {message.chat.title}</blockquote ></b>
+<blockquote><b>{ktrn} Ket : Succes dihapus dari list blacklist</blockquote></b>
 """
 
         return await msg.edit(response)
@@ -590,4 +592,3 @@ async def broadcast_bot(client, message):
         except Exception:
             pass
     return await msg.edit(f"✅ ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ {done} ᴜʙᴏᴛ")
-    

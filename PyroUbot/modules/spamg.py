@@ -4,7 +4,7 @@ from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
 
 from .. import *
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ꜱᴘᴀᴍ"
 __HELP__ = """

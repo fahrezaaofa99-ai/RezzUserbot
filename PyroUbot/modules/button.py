@@ -1,6 +1,6 @@
 from gc import get_objects
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ʙᴜᴛᴛᴏɴ"
 __HELP__ = """

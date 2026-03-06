@@ -7,7 +7,7 @@ from pyrogram.raw.functions.messages import DeleteHistory, StartBot
 
 from pyrogram.errors.exceptions import FloodWait
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴅʙ"
 __HELP__ = """

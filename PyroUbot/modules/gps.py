@@ -1,5 +1,5 @@
 from geopy.geocoders import Nominatim
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ɢᴍᴀᴘs"
 __HELP__ = """

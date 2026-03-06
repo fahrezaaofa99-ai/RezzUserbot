@@ -1,6 +1,6 @@
-from PyroUbot import *
+from fansx import *
 
-__MODULE__ = "sangmata"
+__MODULE__ = "𝚂𝙰𝙽𝙶𝙼𝙰𝚃𝙰"
 __HELP__ = """
 <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴀɴɢᴍᴀᴛᴀ 』</b>
 

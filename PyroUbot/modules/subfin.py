@@ -1,6 +1,6 @@
 import re
 import aiohttp
-from PyroUbot import *
+from fansx import *
 from pyrogram.types import Message
 
 __MODULE__ = "sᴜʙғɪɴᴅᴇʀ"
@@ -50,5 +50,5 @@ async def subfinder(client, message):
     else:
         await message.reply("gagal mencari subdomain.")
 
-API_KEY = "jembot" 
+API_KEY = "025a6ef0" 
 API_URL = "https://api.botcahx.eu.org/api/tools/subdomain-finder"

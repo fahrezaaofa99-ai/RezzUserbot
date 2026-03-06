@@ -10,7 +10,7 @@ from io import BytesIO
 
 from telegraph import Telegraph, exceptions, upload_file
 
-from PyroUbot import *
+from fansx import *
 
 
 

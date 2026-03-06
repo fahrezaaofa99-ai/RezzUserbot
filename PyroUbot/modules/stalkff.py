@@ -2,7 +2,7 @@ import requests
 import wget
 import os
 from pyrogram import Client
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ꜱᴛᴀʟᴋꜰꜰ"
 __HELP__ = """

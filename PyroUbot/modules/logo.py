@@ -1,6 +1,6 @@
 import os
 import requests
-from PyroUbot import *
+from fansx import *
 
 # Masukkan API Key Anda di sini
 API_KEY = "Btz-bxwol"  # Ganti dengan API key yang benar

@@ -1,6 +1,6 @@
 import requests
 from pyrogram import Client
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴀᴛᴛᴘ-ᴛᴛᴘ"
 __HELP__ = """

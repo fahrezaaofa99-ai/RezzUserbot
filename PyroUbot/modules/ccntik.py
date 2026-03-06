@@ -1,7 +1,7 @@
 import asyncio
 import random
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴄᴇᴋᴄᴀɴᴛɪᴋ"
 __HELP__ = """**「 BANTUAN UNTUK MODULE CEK CANTIK 」**

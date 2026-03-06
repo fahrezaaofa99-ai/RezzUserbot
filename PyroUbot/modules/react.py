@@ -9,7 +9,7 @@ perintah : <code>{0}stopreact</code>
     membatalkan proses reaction</blockquote>
 """
 
-from PyroUbot import *
+from fansx import *
 from pyrogram import Client, idle, filters
 from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.types import ChatMember

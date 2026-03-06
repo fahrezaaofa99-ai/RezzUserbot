@@ -1,5 +1,5 @@
 import requests
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "sʜɪᴏ"
 __HELP__ = """

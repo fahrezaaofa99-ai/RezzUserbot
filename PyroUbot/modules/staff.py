@@ -1,4 +1,4 @@
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ꜱᴛᴀꜰꜰ"
 __HELP__ = """
@@ -8,7 +8,7 @@ perintah : <code>{0}staff</code>
     untuk mendapatkan informaꜱi ꜱeluruh ꜱtaff grup</blockquote>
 """
 import os
-from PyroUbot import *
+from fansx import *
 
 
 

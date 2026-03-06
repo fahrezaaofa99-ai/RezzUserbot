@@ -1,8 +1,8 @@
 import asyncio
 from time import sleep
-from PyroUbot import *
+from fansx import *
 
-__MODULE__ = "salam"
+__MODULE__ = "𝚂𝙰𝙻𝙰𝙼"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk salam</b>
 

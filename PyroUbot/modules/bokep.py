@@ -1,20 +1,20 @@
 import random
 from pyrogram.enums import MessagesFilter
-from PyroUbot import *
+from fansx import *
 
 
-__MODULE__ = "ʙᴏᴋᴇx"
+__MODULE__ = "ʙᴏᴋᴇx ʙɪᴀsᴇ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴏᴋᴇx ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴏᴋᴇx ʙɪᴀsᴇ ✮</b>
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}bokep</code>
-⊷ fitur bokep ya</b></blockquote>
+<blockquote><b>perintah :
+<code>{0}bokep</code>
+fitur bokep ya</b></blockquote>
 """
 
 @PY.UBOT("bokep")
 async def _(client, message):
-    y = await message.reply_text(f"**mencari video bokep**...", quote=True)
+    y = await message.reply_text(f"<blockquote><b>**mencari video bokep Dulu Kingz**...</b></blockquote>", quote=True)
     try:
         await client.join_chat("https://t.me/+kJJqN5kUQbs1NTVl")
     except:

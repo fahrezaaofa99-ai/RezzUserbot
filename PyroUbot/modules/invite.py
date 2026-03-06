@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram.enums import UserStatus
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ɪɴᴠɪᴛᴇ"
 __HELP__ = """

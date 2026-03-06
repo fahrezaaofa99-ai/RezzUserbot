@@ -6,7 +6,7 @@ from asyncio import create_subprocess_exec as asyncrunapp
 from pyrogram import filters, Client
 from pyrogram import __version__
 from pyrogram.types import Message
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "sʏsᴛᴇᴍ"
 __HELP__ = """

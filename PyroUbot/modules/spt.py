@@ -1,4 +1,4 @@
-from PyroUbot import *
+from fansx import *
 import asyncio
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 

@@ -1,10 +1,20 @@
 import requests
 import os
-from PyroUbot import *
+from fansx import *
+
+__MODULE__ = "ʙʀᴀᴛᴠɪᴅɪᴏ"
+__HELP__ =  """
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴀᴛ ✮</b>
+
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ:
+<code>{0}bratvideo [text]</code>
+Untuk Membuat Gambar Text video Seperti Tren Tiktok</b></blockquote>
+
+"""
 
 async def BratVideo(text):
     if not text:
-        return "textnya mana?"
+        return "<blockquote><b>textnya mana?</b></blockquote>"
     if len(text) > 250:
         return " "
 
@@ -23,7 +33,7 @@ async def BratVideo(text):
             )
 
             if res.status_code != 200:
-                raise Exception("Gagal mengambil frame dari API")
+                raise Exception("<blockquote><b>Gagal mengambil frame dari API</b></blockquote>")
 
             frame_path = os.path.join(temp_dir, f"frame{i}.mp4")
             with open(frame_path, "wb") as f:
@@ -61,18 +71,18 @@ async def BratVideo(text):
 async def brat_handler(client, message):
     text = message.text.split(maxsplit=1)[-1] if len(message.text.split()) > 1 else None
     if not text:
-        await message.reply_text("textnya mana?")
+        await message.reply_text("<blockquote><b>textnya mana?<blockquote><b>")
         return
 
-    processing_msg = await message.reply_text("proses...")
+    processing_msg = await message.reply_text("<blockquote><b>proses...</b></blockquote>")
     video_path = await BratVideo(text)
 
-    if isinstance(video_path, str) and video_path.startswith("Terjadi kesalahan"):
+    if isinstance(video_path, str) and video_path.startswith("<blockquote><b>Terjadi kesalahan</b></blockquote>"):
         await processing_msg.delete()
         await message.reply_text(video_path)
     else:
         await processing_msg.delete()
-        await message.reply_video(video=video_path, caption="```\ndone```")
+        await message.reply_video(video=video_path, caption="<blockquote><b>```\ndone```</b></blockquote>")
 
         if os.path.exists(video_path):
             os.remove(video_path)

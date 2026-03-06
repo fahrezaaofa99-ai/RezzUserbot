@@ -3,8 +3,8 @@ import asyncio
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from PyroUbot.core.helpers.msg_type import ReplyCheck
-from PyroUbot import *
+from fansx.core.helpers.msg_type import ReplyCheck
+from fansx import *
 
 @ubot.on_message(filters.command("unprem") & filters.me)
 async def jwbsalamlngkp(client: Client, message: Message):

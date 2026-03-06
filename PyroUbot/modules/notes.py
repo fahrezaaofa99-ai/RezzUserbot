@@ -1,6 +1,6 @@
 from pyrogram.types import *
 
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ɴᴏᴛᴇ"
 __HELP__ = """

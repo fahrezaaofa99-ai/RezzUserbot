@@ -4,8 +4,8 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-# Mengimpor PY.UBOT dan PY.TOP_CMD dari modul PyroUbot harus disesuaikan dengan cara impor yang benar.
-from PyroUbot import *
+# Mengimpor PY.UBOT dan PY.TOP_CMD dari modul fansx harus disesuaikan dengan cara impor yang benar.
+from fansx import *
 
 
 

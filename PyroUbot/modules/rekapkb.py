@@ -1,7 +1,7 @@
 import re
 from pyrogram import *
 from pyrogram import Client, filters
-from PyroUbot import PY
+from fansx import PY
 
 __MODULE__ = "ᴛᴏᴏʟs ʀᴇᴋᴀᴘ"
 __HELP__ = """

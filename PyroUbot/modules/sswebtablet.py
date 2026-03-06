@@ -1,17 +1,15 @@
 import os
 import datetime
 import requests
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ss ᴡᴇʙ ᴛᴀʙʟᴇᴛ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ ᴛᴀʙʟᴇᴛ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ ᴛᴀʙʟᴇᴛ✮</b>
 
-<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}sstablet</code> link
-
-⌭ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-ᚗ untuk screenshot website tablet</blockquote>
+<blockquote><b>perintah :
+<code>{0}sswebtablet</code> link
+untuk screenshot website tablet</b></blockquote>
 """
 
 def get_ssweb_image(url):
@@ -19,7 +17,7 @@ def get_ssweb_image(url):
     params = {
         "url": url,
         "device": "desktop",
-        "apikey": "Boyy"
+        "apikey": "045705b1"
     }
     try:
         response = requests.get(api_url, params=params)
@@ -32,7 +30,7 @@ def get_ssweb_image(url):
     except requests.exceptions.RequestException:
         return None
 
-@PY.UBOT("sstablet")
+@PY.UBOT("sswebtablet")
 async def screenshot_handler(client, message):
     args = message.text.split(maxsplit=1)
     if len(args) < 2:

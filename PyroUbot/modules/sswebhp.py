@@ -1,7 +1,7 @@
 import os
 import datetime
 import requests
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ss ᴡᴇʙ ʜᴘ"
 __HELP__ = """

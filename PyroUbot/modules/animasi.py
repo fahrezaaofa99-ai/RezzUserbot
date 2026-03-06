@@ -6,7 +6,7 @@ from pyrogram import *
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from pyrogram.types import *
 
-from PyroUbot import *
+from fansx import *
 
 DEFAULTUSER = "Nay"
 

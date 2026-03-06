@@ -5,15 +5,15 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "ᴀɴsᴀʀɪ ɪsʟᴀᴍɪᴄ"
+__MODULE__ = "ʟᴀᴛᴜᴋᴀᴍ ᴀɪ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Ansari Islamic
-
-perintah : <code>{0}ansari</code>
-    untuk bertanya tentang ayat alquran atau tentang pertanyaan islam lainya</b></blockquote>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟᴀᴛᴜᴋᴀᴍ ᴀɪ ⦫</b>
+<blockquote>⎆ perintah :
+ᚗ <code>{0}latukam</code> text
+⊶ AI yang rada toxic.
 """
 
-@PY.UBOT("ansari")
+@PY.UBOT("latukam")
 @PY.TOP_CMD
 async def chat_gpt(client, message):
     try:
@@ -21,16 +21,16 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<blockquote><b><emoji id=5019523782004441717>❌</emoji>bertanya tentang ayat alquran atau tentang pertanyaan islam lainya</b></blockquote>"
+                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .latukam siapa kamu"
             )
         else:
-            prs = await message.reply_text(f"<blockquote><b><emoji id=5352953358892149485>😇</emoji>Tunggu sebentar kk....</b></blockquote>")
-            hai = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://fastrestapis.fasturl.cloud/aillm/islamic?ask={hai}')
+            prs = await message.reply_text(f"<emoji id=6260400955498435049>🌎</emoji> latukam sedang mikir......")
+            a = message.text.split(' ', 1)[1]
+            response = requests.get(f'https://api.siputzx.my.id/api/ai/latukam?content={a}')
 
             try:
-                if "result" in response.json():
-                    x = response.json()["result"]                  
+                if "data" in response.json():
+                    x = response.json()["data"]                  
                     await prs.edit(
                       f"<blockquote>{x}</blockquote>"
                     )
@@ -40,4 +40,3 @@ async def chat_gpt(client, message):
                 await message.reply_text("Error accessing the response.")
     except Exception as e:
         await message.reply_text(f"{e}")
-      

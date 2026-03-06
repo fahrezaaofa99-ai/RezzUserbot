@@ -1,6 +1,6 @@
 import requests
 import os
-from PyroUbot import *
+from fansx import *
 
 async def BratVideo(text):
     if not text:

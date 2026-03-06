@@ -1,6 +1,6 @@
 import asyncio
 from time import sleep
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "𝙰𝙽𝙸𝙼𝙰𝚂𝙸 𝟸"
 __HELP__ = """

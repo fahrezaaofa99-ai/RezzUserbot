@@ -4,7 +4,7 @@ from pyrogram import enums
 from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴊᴏɪɴʟᴇᴀᴠᴇ"
 __HELP__ = """

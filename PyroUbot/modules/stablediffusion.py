@@ -1,5 +1,5 @@
 import os
-from PyroUbot import *
+from fansx import *
 import requests
 
 __MODULE__ = "sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ"
@@ -15,7 +15,7 @@ def get_giraffe_image(text):
     url = "https://api.botcahx.eu.org/api/search/stablediffusion"
     params = {
         "text": text,
-        "apikey": f"moire"
+        "apikey": f"045705b1"
     }
     try:
         response = requests.get(url, params=params)

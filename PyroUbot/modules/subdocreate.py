@@ -2,9 +2,9 @@ import requests
 import json
 from pyrogram import *
 from pyrogram import Client, filters
-from PyroUbot import PY
+from fansx import PY
 
-__MODULE__ = "Subdomain Creator"
+__MODULE__ = "𝙲𝚁𝙴𝙰𝚃𝙴 𝙳𝙾𝙼𝙰𝙸𝙽"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Subdomain Creator</b>
 

@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from pyrogram import Client
 from pyrogram.types import Message, User, Chat
-from PyroUbot import *
+from fansx import *
 from io import BytesIO
 
 __MODULE__ = "ᴄᴇᴋ ɪᴅ"

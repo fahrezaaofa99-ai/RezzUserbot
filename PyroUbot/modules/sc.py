@@ -16,7 +16,7 @@ import os
 import time as time_module
 import json
 import aiohttp
-from PyroUbot import *
+from fansx import *
 
 # API key untuk BetaBotz API
 APIKEY = "jagoannyabot"
@@ -125,7 +125,7 @@ async def downloader_soundcloud(client, message, url):
 <code>📝 ᴊᴜᴅᴜʟ:</code> <i>{title_short}</i>
 <code>🔗 ᴜʀʟ:</code> <code>{url}</code>
 <code>⬇️ ᴏʟᴇʜ:</code> {client.me.mention}
-<code>⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:</code> <code>PyroUbot</code>
+<code>⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:</code> <code>fansx</code>
 </blockquote>"""
                 )
             finally:

@@ -3,17 +3,18 @@ from pyrogram.raw.functions.contacts import AddContact, DeleteContacts
 from pyrogram.errors import RPCError
 from pyrogram.raw.types import InputUser
 
-from PyroUbot import *
+from fansx import *
 
-__MODULE__ = "kontak"
+__MODULE__ = "ᴋᴏɴᴛᴀᴋ"
 __HELP__ = """
-<blockquote>◖ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴀᴠᴇ ᴋᴏɴᴛᴀᴋ ◗</blockquote>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴋᴏɴᴛᴀᴋ ⦫</b>
 <blockquote>
-  ❑ ᴄᴍᴅ: <code>{0}savekon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ ] [ɴᴀᴍᴀ ᴋᴏɴᴛᴀᴋ]
-  <code>ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ</code>
+⎆ perintah :
+ᚗ <code>{0}savekon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ ] [ɴᴀᴍᴀ ᴋᴏɴᴛᴀᴋ]
+⊶ ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ
 
-  ❑ ᴄᴍᴅ: <code>{0}delkon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ]
-  <code>ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ʏᴀɴɢ ᴅɪꜱɪᴍᴘᴀɴ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ</code>
+ᚗ <code>{0}delkon</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ]
+⊶ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ʏᴀɴɢ ᴅɪꜱɪᴍᴘᴀɴ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ
 </blockquote>
 """
 

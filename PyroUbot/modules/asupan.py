@@ -1,6 +1,6 @@
 import random
 from pyrogram.enums import MessagesFilter
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴀꜱᴜᴘᴀɴ"
 __HELP__ = """

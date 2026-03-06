@@ -6,7 +6,7 @@ import cv2
 import requests
 from pyrogram import raw
 
-from PyroUbot import *
+from fansx import *
 
 
 __MODULE__ = "ɪᴍᴀɢᴇ"

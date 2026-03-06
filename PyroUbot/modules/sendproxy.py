@@ -2,7 +2,7 @@ import requests
 import asyncio
 from pyrogram import Client, filters
 from pyrogram import *
-from PyroUbot import PY
+from fansx import PY
 
 __MODULE__ = "sᴇɴᴅ ᴘʀᴏxʏ"
 __HELP__ = """

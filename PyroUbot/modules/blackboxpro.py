@@ -1,4 +1,4 @@
-from PyroUbot import *
+from fansx import *
 import random
 import requests
 from pyrogram.enums import ChatAction, ParseMode

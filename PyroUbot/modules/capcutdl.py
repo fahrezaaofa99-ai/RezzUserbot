@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from PyroUbot import *
+from fansx import *
 
 __MODULE__ = "ᴄᴀᴘᴄᴜᴛ ᴅʟ"
 __HELP__ = """
@@ -24,7 +24,7 @@ async def capcut_download(client, message):
     url = message.command[1]
     processing_msg = await message.reply_text("🔄 Memproses permintaan, harap tunggu...")
     
-    response = requests.get(f"https://api.botcahx.eu.org/api/download/capcut?url={url}&apikey=moire")
+    response = requests.get(f"https://api.botcahx.eu.org/api/download/capcut?url={url}&apikey=045705b1")
     data = response.json()
     
     if not data.get("status"):

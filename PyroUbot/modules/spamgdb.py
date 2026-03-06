@@ -8,28 +8,29 @@ spam_taksdb = {}
 
 kontol = False
 
-__MODULE__ = "𝚂𝙿𝙰𝙼 𝟸"
+__MODULE__ = "sᴘᴀᴍ ᴅʙ"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk Spam 2<b>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴀᴍ ᴅʙ ⦫</b>
+<blockquote>
+⎆ perintah :
+ᚗ <code>{0}spamdb</code> waktu replytext
+⊶ Memulai spam ke database.
 
-• Perintah : <code>{0}sdspm</code> [Waktu] [Balas ke pesan]
-• Penjelasan : Memulai spam ke database.
+ᚗ <code>{0}stspam</code>
+⊶ Untuk mengehentikan spam.
 
-• Perintah : <code>{0}stdspm</code>
-• Penjelasan : Menghentikan proses spam didatabase.
+ᚗ <code>{0}spamlist</code>
+⊶ Melihat daftar grup didalam database.
 
-• Perintah : <code>{0}listspm</code> 
-• Penjelasan : Melihat daftar grup didalam database.
+ᚗ <code>{0}addspam</code>
+⊶ Menambahkan grup ke dalam database spam.
 
-• Perintah : <code>{0}addspm</code> 
-• Penjelasan : Menambahkan grup ke dalam database spam.
-
-• Perintah : <code>{0}delspm</code> 
-• Penjelasan : Menghapus grup dari database spam.</b></blockquote><b>
+ᚗ <code>{0}delspam</code>
+⊶ Menghapus grup dari database spam.
 """
 
 
-@PY.UBOT("sdspm")
+@PY.UBOT("spamdb")
 async def _(c, m):
     global kontol
 
@@ -71,7 +72,7 @@ async def _(c, m):
     await m.reply(f"<b>Processing Spam To Database !</b>")
 
 
-@PY.UBOT("stdspm")
+@PY.UBOT("stspam")
 async def _(c, m):
     global kontol
     if not kontol:
@@ -88,7 +89,7 @@ async def _(c, m):
     await m.reply("<b>Spam database dihentikan.</b>")
 
 
-@PY.UBOT("listspm")
+@PY.UBOT("spamlist")
 async def _(c, m):
     teks = "<b>Daftar Database Spam:</b>\n\n"
     user_id = c.me.id
@@ -101,7 +102,7 @@ async def _(c, m):
         await m.reply(teks)
 
 
-@PY.UBOT("addspm|delspm")
+@PY.UBOT("addspam|delspam")
 async def _(c, m):
     user_id = c.me.id
     chat_id = m.command[1] if len(m.command) > 1 else m.chat.id

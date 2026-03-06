@@ -1,4 +1,4 @@
-from PyroUbot import *
+from fansx import *
 from pyrogram.types import EmojiStatus, MessageEntity
 from pyrogram.enums import MessageEntityType
 

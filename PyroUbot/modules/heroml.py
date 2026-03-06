@@ -2,7 +2,7 @@ import aiohttp
 import requests
 from bs4 import BeautifulSoup
 from pyrogram import Client, filters
-from PyroUbot import *
+from fansx import *
 
 
 __MODULE__ = "ʜᴇʀᴏ ᴍʟ"
